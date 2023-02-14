@@ -1,0 +1,91 @@
+*,
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Silkscreen', cursive;
+}
+
+:root {
+    --bg-primary: rgb(70, 89, 255);
+    --bg-secondary: #eaeaea;
+    --txt-primery: #f7f7f7;
+    --txt-secondary: #222222;
+    --icons-bg-primary: tomato;
+    --icons-bg-secondary: #777777;
+}
+.container {
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    background: var(--bg-primary);
+    display: block;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 40%;
+    border: 1px solid white;
+    background-color: var(--bg-secondary);
+    color: var(--txt-secondary);
+    padding: 32px;
+    margin: 8px;
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,.5);
+}
+.text-center {
+    text-align: center;
+}
+
+.icons {
+    margin-top: 8px;
+    font-size: 24pxd;
+    color: var(--icons-bg-primary);
+}
+
+.title {
+    font-size: 2em;
+}
+
+.description {
+    font-size: .5em;
+    margin-top: 8px;
+}
+
+.btn {
+    margin-top: 16px;
+    padding: 8px;
+    cursor: pointer;
+    border: none;
+    width: 100%;
+}
+
+.btn:hover {
+    background-color: var(--bg-primary);
+    color: var(--txt-primery);
+    --ms-transform: rotate(2deg);
+    transform: rotate(2deg);
+    transition: .3s ease-in-out;
+}
+
+@media screen and (max-width: 400px) {
+    
+
+    .title {
+        font-size: 3em;
+    }
+
+    .description {
+        font-size: 1.5em;
+    }
+
+    .btn {
+        padding: 10px;
+        font-size: 1.5em;
+    }
+}
